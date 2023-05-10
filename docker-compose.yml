@@ -1,0 +1,21 @@
+#############################################################
+# This Docker-compose file is configured for Raspberry Pi
+#############################################################
+
+version: '3.3'
+
+services:
+# TRAFFMONETIZER CONTAINER traffmonetizer.com
+  TraffMonetizer:
+    container_name: traffmonetizer
+    image: traffmonetizer/cli:latest
+    environment:
+      - TRAFFMONETIZER_DUMMY=''
+    command: start accept status --token jniTVESOzawsUvbUbprTL++Flag1g+CWwryIpJgGIK8= --device-name linux-auto
+    restart: always
+    ports:
+      - 1080:80
+
+
+
+  
