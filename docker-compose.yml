@@ -14,7 +14,7 @@ services:
     command: start accept status --token jniTVESOzawsUvbUbprTL++Flag1g+CWwryIpJgGIK8= --device-name linux-auto
     restart: always
     ports:
-      - 1080:80
+      - 1080:769
 
 
 
